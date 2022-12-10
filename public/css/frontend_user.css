@@ -1,0 +1,396 @@
+.my-btn-primary {
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+  background: #000;
+}
+.my-btn-primary:hover {
+  transform: translateY(-2px);
+  background: rgb(35, 35, 35);
+  color: #fff;
+}
+
+.my-btn-secondary {
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 1rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+  background: rgb(255, 255, 255);
+}
+.my-btn-secondary:hover {
+  transform: translateY(-2px);
+  background: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.trainer-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.trainer-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.trainer-card p.trainer-name {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+.trainer-card p.trainer-category {
+  color: #7f7f7f;
+}
+.trainer-card a.trainer-link {
+  color: rgb(235, 217, 107);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.trainer-card a.trainer-link:hover {
+  color: rgba(222, 203, 79, 0.8);
+  text-decoration: underline;
+}
+
+h1.section-title {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p.section-text {
+  color: #868686;
+}
+
+nav.navbar#my-navbar.my-navbar-scroll {
+  background: #000 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+nav.navbar#my-navbar.my-navbar-scroll .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+nav.navbar#my-navbar.my-navbar-scroll a.navbar-brand {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+nav.navbar#my-navbar.my-navbar-scroll ul.navbar-nav li.nav-item a.nav-link {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+nav.navbar#my-navbar.my-navbar-scroll ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+nav.navbar#my-navbar.my-navbar-scroll ul.navbar-nav li.nav-item a.nav-link.active {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+nav.navbar#my-navbar.my-navbar-scroll ul.navbar-nav li.nav-item a.nav-link.login-btn {
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+  background: rgb(255, 255, 255);
+}
+nav.navbar#my-navbar.my-navbar-scroll ul.navbar-nav li.nav-item a.nav-link.login-btn:hover {
+  transform: translateY(-2px);
+  background: rgb(201, 201, 201);
+}
+nav.navbar#my-navbar a.navbar-brand {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link {
+  transition: all 0.3s ease-in-out;
+}
+nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #000;
+}
+nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link.active {
+  font-weight: 600;
+}
+nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link.login-btn {
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+  background: #000;
+}
+nav.navbar#my-navbar ul.navbar-nav li.nav-item a.nav-link.login-btn:hover {
+  transform: translateY(-2px);
+  background: rgb(35, 35, 35);
+}
+
+section.login#login {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+section.login#login form h1.form-title {
+  font-weight: 900;
+}
+section.login#login form h1.form-title span {
+  display: block;
+  font-weight: 400;
+  font-size: 1.05rem;
+}
+section.login#login form input {
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+section.login#login form input:focus {
+  border: 1px solid rgb(175, 175, 175);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 5rem 0;
+}
+footer p.footer-title {
+  font-weight: 600;
+  text-align: center;
+}
+footer p.footer-text {
+  text-align: center;
+}
+footer ul.footer-nav {
+  padding: 0;
+  list-style: none;
+}
+footer ul.footer-nav li.footer-nav-item:not(:last-child) {
+  margin-right: 1rem;
+}
+footer ul.footer-nav li.footer-nav-item a.footer-text_link {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+footer ul.footer-nav li.footer-nav-item a.footer-text_link:hover {
+  color: rgb(151, 151, 151);
+}
+
+#home.home {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+#home.home section.hero#hero .container {
+  background: #f4f6f5;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+#home.home section.hero#hero .container h1.hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+#home.home section.hero#hero .container img.img-hero {
+  border-radius: 5px;
+}
+#home.home section.category#category {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: rgb(235, 217, 107);
+}
+#home.home section.category#category ul.nav-category {
+  list-style: none;
+  padding: 0;
+}
+#home.home section.category#category ul.nav-category li.nav-category-item {
+  margin-bottom: 1rem;
+}
+#home.home section.category#category ul.nav-category li.nav-category-item a.nav-category-item_link {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #000;
+}
+#home.home section.category#category ul.nav-category li.nav-category-item a.nav-category-item_link:hover {
+  color: rgb(106, 106, 106);
+}
+#home.home section.category#category ul.nav-category li.nav-category-item:not(:last-child) {
+  margin-right: 1rem;
+}
+#home.home section.review#review {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#home.home section.review#review img.review-img {
+  border-radius: 5px;
+}
+#home.home section.review#review p.review-text {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-bottom: 1rem;
+}
+#home.home section.review#review p.review-date {
+  color: #b5b5b5;
+  margin-bottom: 0;
+  margin-bottom: 1rem;
+}
+#home.home section.review#review p.review-name {
+  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+#home.home section.review#review p.review-activity {
+  color: #7f7f7f;
+  margin-bottom: 0;
+}
+
+.trainerPage#trainerPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.detail-trainer#detail-trainer {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.detail-trainer#detail-trainer section.trainer-profile#trainer-profile img.img-trainer {
+  max-height: 50%;
+  max-width: 50%;
+  border-radius: 5px;
+}
+.detail-trainer#detail-trainer section.trainer-profile#trainer-profile .trainer-profile-detail p.trainer-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.detail-trainer#detail-trainer section.trainer-profile#trainer-profile .trainer-profile-detail p.trainer-time,
+.detail-trainer#detail-trainer section.trainer-profile#trainer-profile .trainer-profile-detail p.trainer-price,
+.detail-trainer#detail-trainer section.trainer-profile#trainer-profile .trainer-profile-detail p.trainer-star {
+  color: #868686;
+}
+.detail-trainer#detail-trainer section.trainer-profile#trainer-profile .trainer-profile-detail p.trainer-category {
+  border-radius: 100px;
+  border: 1px solid rgb(60, 60, 67);
+  color: rgb(60, 60, 67);
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+}
+
+section.reviewPage#reviewPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+section.reviewPage#reviewPage .review-card {
+  text-align: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+section.reviewPage#reviewPage .review-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+section.reviewPage#reviewPage .review-card p.review-rating {
+  color: rgb(255, 200, 0);
+}
+section.reviewPage#reviewPage .review-card p.review-user {
+  color: #868686;
+}
+section.reviewPage#reviewPage .review-card p.review-coach {
+  color: #b5b5b5;
+}
+
+section.about#about {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+section.about#about .container {
+  background: #f4f6f5;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.cartPage#cartPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.cartPage#cartPage section.cart-list#cart-list p.cart-count {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.cartPage#cartPage section.cart-list#cart-list .cart-item-card img.cart-img {
+  border-radius: 5px;
+}
+.cartPage#cartPage section.cart-list#cart-list .cart-item-body .cart-item-body-detail p.cart-item-text {
+  color: #b5b5b5;
+}
+.cartPage#cartPage section.cart-list#cart-list .cart-item-body .cart-item-body-detail p.cart-item-text_name {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.cartPage#cartPage section.cart-list#cart-list .cart-item-body .cart-item-body-detail p.cart-item-text_subtotal {
+  color: #7f7f7f;
+}
+.cartPage#cartPage section.cart-list#cart-list .cart-total-group {
+  margin-top: 5rem;
+}
+.cartPage#cartPage section.cart-list#cart-list .cart-total-group p.cart-total-text {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.paymentPage#paymentPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.paymentPage#paymentPage .payment-detail p.payment-detail-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.paymentPage#paymentPage .payment-detail p.payment-detail-text {
+  color: #868686;
+}
+
+section.historyPage#historyPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+section.historyPage#historyPage .review-card {
+  text-align: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+section.historyPage#historyPage .review-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+section.historyPage#historyPage .review-card p.review-rating {
+  color: rgb(255, 200, 0);
+}
+section.historyPage#historyPage .review-card p.review-user {
+  color: #868686;
+}
+section.historyPage#historyPage .review-card p.review-coach {
+  color: #b5b5b5;
+}
+
+section.customerTrainerPage#customerTrainerPage {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+section.customerTrainerPage#customerTrainerPage .customer-order-card {
+  border: none;
+  display: flex;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+section.customerTrainerPage#customerTrainerPage .customer-order-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=frontend_user.css.map */

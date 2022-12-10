@@ -1,0 +1,459 @@
+.my-btn-primary {
+    color: #fff;
+    border-radius: 5px;
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease-in-out;
+    background: #000;
+
+    &:hover {
+        transform: translateY(-2px);
+        background: rgb(35, 35, 35);
+        color: #fff;
+    }
+}
+.my-btn-secondary {
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease-in-out;
+    background: rgb(255, 255, 255);
+
+    &:hover {
+        transform: translateY(-2px);
+        background: rgb(0, 0, 0);
+        color: #fff;
+    }
+}
+
+.trainer-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-2px) scale(1.01);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    p.trainer-name {
+        font-weight: 500;
+        margin-bottom: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    p.trainer-category {
+        color: #7f7f7f;
+    }
+
+    a.trainer-link {
+        color: rgba(235, 217, 107, 1);
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        &:hover {
+            color: rgba(222, 203, 79, 0.8);
+            text-decoration: underline;
+        }
+    }
+}
+
+h1.section-title {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+p.section-text {
+    color: #868686;
+}
+
+// === NAVBAR ===
+nav.navbar#my-navbar {
+    &.my-navbar-scroll {
+        background: #000 !important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        a.navbar-brand {
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: #fff !important;
+        }
+
+        ul.navbar-nav {
+            li.nav-item {
+                a.nav-link {
+                    transition: all 0.3s ease-in-out;
+                    color: #fff;
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+                a.nav-link.active {
+                    font-weight: 600;
+                    color: rgb(255, 255, 255);
+                }
+
+                a.nav-link.login-btn {
+                    color: rgb(0, 0, 0);
+                    border-radius: 5px;
+                    padding: 0.5rem 1.25rem;
+                    transition: all 0.3s ease-in-out;
+                    background: rgb(255, 255, 255);
+
+                    &:hover {
+                        transform: translateY(-2px);
+                        background: rgb(201, 201, 201);
+                    }
+                }
+            }
+        }
+    }
+
+    a.navbar-brand {
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    ul.navbar-nav {
+        li.nav-item {
+            a.nav-link {
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: #000;
+                }
+            }
+            a.nav-link.active {
+                font-weight: 600;
+            }
+
+            a.nav-link.login-btn {
+                color: #fff;
+                border-radius: 5px;
+                padding: 0.5rem 1.25rem;
+                transition: all 0.3s ease-in-out;
+                background: #000;
+
+                &:hover {
+                    transform: translateY(-2px);
+                    background: rgb(35, 35, 35);
+                }
+            }
+        }
+    }
+}
+
+// === LOGIN ===
+section.login#login {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    form {
+        h1.form-title {
+            font-weight: 900;
+            span {
+                display: block;
+                font-weight: 400;
+                font-size: 1.05rem;
+            }
+        }
+
+        input {
+            border: 1px solid rgb(214, 214, 214);
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+
+            &:focus {
+                border: 1px solid rgb(175, 175, 175);
+                box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+
+// === FOOTER ===
+footer {
+    background: #000;
+    color: #fff;
+    padding: 5rem 0;
+
+    p.footer-title {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    p.footer-text {
+        text-align: center;
+    }
+    ul.footer-nav {
+        padding: 0;
+        list-style: none;
+        li.footer-nav-item {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+            a.footer-text_link {
+                font-size: 1.5rem;
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+                display: inline-block;
+                &:hover {
+                    color: rgb(151, 151, 151);
+                }
+            }
+        }
+    }
+}
+
+// === HOME ===
+#home.home {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+
+    section.hero#hero {
+        .container {
+            background: #f4f6f5;
+            border-radius: 10px;
+            padding: 2.5rem;
+
+            h1.hero-title {
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            img.img-hero {
+                border-radius: 5px;
+            }
+        }
+    }
+
+    section.category#category {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background: rgba(235, 217, 107, 1);
+
+        ul.nav-category {
+            list-style: none;
+            padding: 0;
+            li.nav-category-item {
+                margin-bottom: 1rem;
+                a.nav-category-item_link {
+                    transition: all 0.3s ease-in-out;
+                    text-decoration: none;
+                    color: #000;
+                    &:hover {
+                        color: rgb(106, 106, 106);
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    section.review#review {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        img.review-img {
+            border-radius: 5px;
+        }
+        p.review-text {
+            font-weight: 500;
+            margin-bottom: 0;
+            margin-bottom: 1rem;
+        }
+
+        p.review-date {
+            color: #b5b5b5;
+            margin-bottom: 0;
+            margin-bottom: 1rem;
+        }
+
+        p.review-name {
+            margin-bottom: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        p.review-activity {
+            color: #7f7f7f;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// === TRAINER ===
+.trainerPage#trainerPage {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+// === DETAIL ===
+.detail-trainer#detail-trainer {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    section.trainer-profile#trainer-profile {
+        img.img-trainer {
+            max-height: 50%;
+            max-width: 50%;
+            border-radius: 5px;
+        }
+        .trainer-profile-detail {
+            p.trainer-name {
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+            p.trainer-time,
+            p.trainer-price,
+            p.trainer-star {
+                color: #868686;
+            }
+
+            p.trainer-category {
+                border-radius: 100px;
+                border: 1px solid rgba(60, 60, 67, 1);
+                color: rgba(60, 60, 67, 1);
+                padding: 0.25rem 0.5rem;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// === REVIEWS ===
+section.reviewPage#reviewPage {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    .review-card {
+        text-align: center;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+
+        p.review-rating {
+            color: rgb(255, 200, 0);
+        }
+
+        p.review-user {
+            color: #868686;
+        }
+
+        p.review-coach {
+            color: #b5b5b5;
+        }
+    }
+}
+
+// === ABOUT ===
+section.about#about {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    .container {
+        background: #f4f6f5;
+        border-radius: 10px;
+        padding: 2.5rem;
+    }
+}
+
+// === CART ===
+.cartPage#cartPage {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    section.cart-list#cart-list {
+        p.cart-count {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .cart-item-card {
+            img.cart-img {
+                border-radius: 5px;
+            }
+        }
+
+        .cart-item-body {
+            .cart-item-body-detail {
+                p.cart-item-text {
+                    color: #b5b5b5;
+                }
+                p.cart-item-text_name {
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                }
+                p.cart-item-text_subtotal {
+                    color: #7f7f7f;
+                }
+            }
+        }
+
+        .cart-total-group {
+            margin-top: 5rem;
+            p.cart-total-text {
+                color: #000;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// === PAYMENT ===
+.paymentPage#paymentPage {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    .payment-detail {
+        p.payment-detail-title {
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+
+        p.payment-detail-text {
+            color: #868686;
+        }
+    }
+}
+
+// === HISTORY ===
+section.historyPage#historyPage {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+// ===================== COACH =====================
+// === CUSTOMER ORDER ===
+section.customerTrainerPage#customerTrainerPage {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+
+    .customer-order-card {
+        border: none;
+        display: flex;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
