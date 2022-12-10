@@ -6,7 +6,3 @@ window.onscroll = function (event) {
     navbar.classList.remove("my-navbar-scroll");
   }
 };
-
-$(document).ready(function () {
-  $('#historyPageTable').DataTable();
-});
