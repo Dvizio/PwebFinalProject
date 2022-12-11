@@ -1,9 +1,9 @@
 <footer>
   <div class="container">
     <div class="row justify-content-center align-items-start">
-      <div class="col-md-4">
+      <div class="col-md-6">
         <p class="footer-title">
-          Our Office
+          Kantor Kami
         </p>
         <p class="footer-text">
           Jl. Mojoarum V No.66<br>
@@ -13,30 +13,13 @@
 
         </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <p class="footer-title">
-          Join Us
+          Bergabung Bersama Kami
         </p>
         <p class="footer-text">
-            <a href="{{ route('coach.register.view') }}" class="text-white">Join Us As Trainers</a></p>
+          <a href="{{ route('coach.register.view') }}" class="text-white">Gabung Sebagai Pelatih</a>
         </p>
-      </div>
-      <div class="col-md-4">
-        <p class="footer-title">
-          Socials
-        </p>
-        <p class="footer-text">
-        <ul class="footer-nav d-flex flex-wrap justify-content-center align-items-center">
-          <li class="footer-nav-item">
-            <a href="#" class="footer-text_link"><i class="bi bi-facebook"></i></a><br>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#" class="footer-text_link"><i class="bi bi-instagram"></i></a><br>
-          </li>
-          <li class="footer-nav-item">
-            <a href="#" class="footer-text_link"><i class="bi bi-youtube"></i></a>
-          </li>
-        </ul>
         </p>
       </div>
     </div>

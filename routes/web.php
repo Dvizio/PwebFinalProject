@@ -66,16 +66,26 @@ Route::middleware('guest:user')
         Route::delete('cart/{rowId}/delete', [CartController::class, 'remove'])->name('cart.remove');
         Route::delete('cart/destroy', [CartController::class, 'destroy'])->name('cart.destroy');
 
-        Route::get('payment', [PaymentController::class, 'index'])->name('payment.view');
+        Route::get('payment', [PaymentController::class, 'index'])->name('payment.view')->middleware('payment_redirect');
+        Route::post('payment', [PaymentController::class, 'saveOrder'])->name('payment.handle');
+        Route::get('repayment/{invoice}', [PaymentController::class, 'repayment'])->name('payment.repay');
+
+        Route::get('payment/action/{snap}/{clientToken}', [PaymentController::class, 'midtransView']);
+        Route::post('payment/callback', [PaymentController::class, 'callback'])->name('payment.callback');
 
         Route::post('invoice', [InvoiceController::class, 'handle'])->name('invoice.handle');
         Route::get('invoice/{invoice}', [InvoiceController::class, 'detail'])->name('invoice.detail');
         Route::post('invoice/{invoice}/paid', [InvoiceController::class, 'setPaid'])->name('invoice.paid');
 
+        Route::get('invoice/{invoice}/proof', [InvoiceController::class, 'generate'])->name('invoice.proof');
+
         Route::get('history', [UserHistoryController::class, 'index'])->name('history.view');
 
         Route::get('edit', [UserAuthController::class, 'edit'])->name('settings.edit');
         Route::patch('update', [UserAuthController::class, 'update'])->name('settings.update');
+
+        Route::get('/review/self', [ReviewController::class, 'show'])->name('review.show');
+        Route::get('/review/self/{order_item}', [ReviewController::class, 'create'])->name('review.create');
     });
 
 // COACH
@@ -101,14 +111,16 @@ Route::prefix('coach')
     ->group(function () {
         Route::get('customer', [CustomerController::class, 'index'])->name('customer');
         Route::patch('customer/{order_item_status}', [CustomerController::class, 'markAsDone'])->name('customer.done');
+        Route::get('customer/{order_item_status}/cancel', [CustomerController::class, 'cancelView'])->name('customer.cancel.view');
+        Route::patch('customer/{order_item_status}/cancel', [CustomerController::class, 'cancel'])->name('customer.cancel');
 
         Route::get('history', [CoachHistoryController::class, 'index'])->name('history');
         Route::get('progress', [ProgressController::class, 'index'])->name('progress');
 
         Route::resource('sports', DomainController::class)->except('show');
 
-        Route::get('edit', [CoachAuthController::class, 'edit'])->name('settings.index');;
-        Route::patch('update', [CoachAuthController::class, 'update'])->name('settings.update');;
+        Route::get('edit', [CoachAuthController::class, 'edit'])->name('settings.index');
+        Route::patch('update', [CoachAuthController::class, 'update'])->name('settings.update');
     });
 
 // ADMIN
@@ -131,4 +143,10 @@ Route::prefix('admin')
         Route::get('orders', 'orders')->name('orders');
         Route::get('coach', 'coach')->name('coach');
         Route::get('coach_progress', 'coach_progress')->name('coach_progress');
+        Route::get('cancellation', 'cancellation')->name('cancellation');
+        Route::patch('cancellation/{order_item_status}', 'cancellationDone')->name('cancellation.update');
+
+        Route::get('coach_approval', 'approvedCoach')->name('approved');
+        Route::patch('approved/{coach}', 'setApprovedCoach')->name('approved.update');
+        Route::post('approved/{coach}/deny', 'denyCoach')->name('approved.deny');
     });
